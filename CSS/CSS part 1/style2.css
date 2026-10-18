@@ -1,0 +1,9 @@
+p{
+    text-decoration: double underline teal;
+    font-weight: 900; 
+    color: #ffa511;
+    font-size: 55px;
+    line-height: 1.5ex;
+    text-align: center;
+    letter-spacing: 2px;
+}

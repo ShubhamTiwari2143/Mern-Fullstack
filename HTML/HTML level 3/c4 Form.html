@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form and its attribute</title>
+  </head>
+  <body>
+    <form action="/server">
+        <!-- using label tag for linking with input means we press on text it also work -->
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" name="user" id="username" placeholder="enter your username"/>
+      </div><br>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="pwd" id="password" placeholder="Enter your password"/>
+      </div><br>
+
+
+      <div>
+        <label for="emailId">EmailID:</label>
+        <input type="email" name="email" id="emailId" placeholder="Enter your email"/>
+      </div><br>
+
+
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" />
+      </div><br>
+
+
+      <div>
+        <input type="checkbox" name="adult" id="adult" />
+        <label for="adult">I am 18+</label>
+      </div><br>
+
+      <!-- in below code we are groupping checlboxes with each by using name attribute and keeping value of name same in each checkboxes -->
+      <div>
+        Choose your subjects:
+        <input type="checkbox" name="subjects" id="Gk"  value="Gk"/>
+        <label for="Gk">Gk</label>
+        <input type="checkbox" name="subjects" id="Science" value="Science"/>
+        <label for="Science">Science</label>
+        <input type="checkbox" name="subjects" id="Maths" value="Maths" />
+        <label for="Maths">Maths</label>
+      </div><br>
+
+
+      <div>
+        <input type="radio" name="fruit" id="apple" value="apple" />
+        <label for="apple">Apple</label>
+        <input type="radio" name="fruit" id="Mango" value="Mango" />
+        <label for="Mango">Mango</label>
+      </div><br>
+
+      <div>
+        Choose your occupation:
+        <select name="profession" id="profession">
+            <option>Select your Occupation</option>
+            <option value="stu">Student</option>
+            <option value="dev">Developer</option>
+        </select>
+      </div><br>
+
+       <!-- input type me range me ek attribute hota hai value wo use hota hai agar hum chahte hai ki pahle se select value rhe mai jitna value set kr du utna set rhe to hum value attribute ka use karenge -->
+      <label for="vol">Select your volume level</label>
+      <input type="range" name="vol" id="vol" min="0" max="100" step="10" value="70"><br>
+
+      <label for="feedback">Please give your valuable feedback</label>
+      <textarea name="feedback" id="feedback" placeholder="write your feedback here.."></textarea><br><br>
+      <button type="submit">Submit</button> &nbsp;
+      <button type="reset">Reset</button>
+    </form>
+    <br />
+    <hr />
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" placeholder="search in youtube" />
+      <button>Search</button>
+    </form>
+  </body>
+</html>

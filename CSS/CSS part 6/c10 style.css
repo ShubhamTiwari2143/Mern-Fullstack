@@ -1,0 +1,19 @@
+.box {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  background-color: pink;
+}
+/* Z-index kavi v static ya default position me nhi lgta */
+/* z-index ki value jitna jyada rahega ek dusre se wo upper dikhega */
+.one{
+    background-color: aquamarine;
+    position: relative;
+    z-index: -1;
+}
+.two{
+    background-color: darksalmon;
+    position: relative;
+    bottom: 50px;
+    z-index: -2;
+}

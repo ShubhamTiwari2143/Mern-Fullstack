@@ -1,0 +1,36 @@
+/* Using box model properties like height, width,border-width,border-style,border-color */
+/* to ctrl an individual side of the box we use properties like border-left,border-right,
+border-top,border-bottom */
+div {
+  height: 150px;
+  width: 500px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: red;
+  border-left-color:  blue ;
+  border-left-style: dashed;
+  /* shorthand form to ctrl individual sides of border we can change color style in one line */
+  border-top: blue dashed;
+  /* using border-radius property to round  */
+  border-radius: 10px;
+  /* we can also ctrl individual border radius like border-left-radius,border-right-radius,borer-top-radius,border-bottom-radius */
+  border-top-left-radius: 30px;
+
+  /* padding is used to give space from content */
+  padding-top: 10px;
+
+  /* margin is used to give space between boxes */
+  margin: 20px;
+}
+
+/* shorthand form of border-width,border-style,border-color */
+h1 {
+  border: 2px dashed purple;
+}
+
+button{
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
